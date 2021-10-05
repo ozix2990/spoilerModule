@@ -2,7 +2,7 @@
   ### 1.Должна быть html структура:
   ```html
   <div class="spoiler">
-    <div class="spoiler__head">Спойлер</div>
+    <div class="spoiler__head">Заголовок спойлера</div>
     <div class="spoiler__body">
         <div class="spoiler__descr"> Описание </div>
     </div>
