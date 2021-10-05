@@ -1,0 +1,42 @@
+
+.spoiler .spoiler__body {
+    transition: height 0.5s ease;
+}
+.spoiler .spoiler__body .spoiler__descr {
+    padding: 20px;
+}
+.spoiler .spoiler__head {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    font-size: 30px;
+    border-bottom: 1px solid black;
+    width: 400px;
+    display: flex;
+    align-items: center;
+   
+}
+.spoiler .spoiler__head::after {
+    content: "+";
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    transition: all 0.3s ease;
+}
+.spoiler.spoiler_active .spoiler__head::after {
+    transform: rotate(130deg);
+}
+.spoiler.mobile .mobile__head {
+    border: none;
+}
+.spoiler.mobile .mobile__head::after {
+    display: none;
+}
+@media (max-width: 768px) {
+    .spoiler.mobile .mobile__head {
+        border-bottom: 1px solid black;
+    }
+    .spoiler.mobile .mobile__head::after {
+        display: block;
+    }
+}
