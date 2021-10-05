@@ -1,5 +1,5 @@
 ## Использование: 
-  ### 1.Должна быть html структура:
+  ### Должна быть html структура:
   ```html
   <div class="spoiler">
     <div class="spoiler__head">Заголовок спойлера</div>
